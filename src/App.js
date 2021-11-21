@@ -176,6 +176,8 @@ const App = () => {
       */
       console.log("Connected", accounts[0]);
       setCurrentAccount(accounts[0]);
+      await getInitialCount()
+
       setupEventListener();
     } catch (error) {
       console.log(error)
